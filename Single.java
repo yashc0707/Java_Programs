@@ -1,0 +1,31 @@
+class Base // Size:8
+{
+    public int i, j;
+
+    public void fun() {
+        System.out.println("Inside Base fun");
+    }
+}
+
+class Derived extends Base // Size:12
+{
+    public int x;
+
+    public void gun() {
+        System.out.println("Inside Derived gun");
+
+    }
+}
+
+class Single {
+
+    public static void main(String arr[]) {
+        Base bobj = new Base();
+        Derived dobj = new Derived();
+
+        bobj.fun();
+        dobj.fun();
+        dobj.gun();
+
+    }
+}
